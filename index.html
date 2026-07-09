@@ -14,6 +14,9 @@
     <!-- Google Fonts: JetBrains Mono (Coding font) & Inter -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 
+    <!-- Devicon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
     <script>
         tailwind.config = {
             theme: {
@@ -103,6 +106,7 @@
                         <a href="#home" class="hover:text-term-green transition-colors px-3 py-2">~/home</a>
                         <a href="#about" class="hover:text-term-green transition-colors px-3 py-2">./about</a>
                         <a href="#projects" class="hover:text-term-green transition-colors px-3 py-2">./projects</a>
+                        <a href="#certificates" class="hover:text-term-green transition-colors px-3 py-2">./certificates</a>
                         <a href="#contact" class="hover:text-term-green transition-colors px-3 py-2">./contact</a>
                     </div>
                 </div>
@@ -120,6 +124,7 @@
                 <a href="#home" class="block hover:bg-slate-700 hover:text-term-green px-3 py-2 rounded-md">~/home</a>
                 <a href="#about" class="block hover:bg-slate-700 hover:text-term-green px-3 py-2 rounded-md">./about</a>
                 <a href="#projects" class="block hover:bg-slate-700 hover:text-term-green px-3 py-2 rounded-md">./projects</a>
+                <a href="#certificates" class="block hover:bg-slate-700 hover:text-term-green px-3 py-2 rounded-md">./certificates</a>
                 <a href="#contact" class="block hover:bg-slate-700 hover:text-term-green px-3 py-2 rounded-md">./contact</a>
             </div>
         </div>
@@ -199,16 +204,28 @@
                         <div>
                             <span class="text-xs text-slate-500 font-mono mb-2 block border-l-2 border-term-green/50 pl-2">Languages</span>
                             <div class="flex flex-wrap gap-2">
-                                <span class="tooltip bg-slate-800 border border-slate-700 hover:border-cpp-blue text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
-                                    C++
+                                <span class="tooltip flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-cpp-blue text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-cplusplus-plain text-cpp-blue"></i>++
                                     <span class="tooltiptext">Modern C++ (17/20)</span>
                                 </span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-slate-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">C</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-yellow-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Python</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-orange-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Java</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-purple-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">C#</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-purple-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Kotlin</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-blue-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Dart</span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-slate-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-c-plain text-slate-400"></i> C
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-yellow-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-python-plain text-yellow-500"></i> Python
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-orange-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-java-plain text-orange-600"></i> Java
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-purple-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-csharp-plain text-purple-600"></i> C#
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-purple-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-kotlin-plain text-green-500"></i> Kotlin
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-dart-plain text-blue-400"></i> Dart
+                                </span>
                             </div>
                         </div>
 
@@ -216,11 +233,33 @@
                         <div>
                             <span class="text-xs text-slate-500 font-mono mb-2 block border-l-2 border-blue-500/50 pl-2">Web & Data</span>
                             <div class="flex flex-wrap gap-2">
-                                <span class="bg-slate-800 border border-slate-700 hover:border-green-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Node.js</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-sky-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">React</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-cyan-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Tailwind</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-indigo-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">PHP</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">MySQL</span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-green-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-nodejs-plain text-green-500"></i> Node.js
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-sky-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-react-plain text-sky-400"></i> React
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-cyan-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-tailwindcss-plain text-cyan-400"></i> Tailwind
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-indigo-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-php-plain text-indigo-400"></i> PHP
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-mysql-plain text-blue-600"></i> MySQL
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-laravel-plain text-blue-600"></i> Laravel
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-javascript-plain text-blue-600"></i> Javascript
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-go-plain text-blue-600"></i> go
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-fastapi-plain text-blue-600"></i> FastAPI
+                                </span>
                             </div>
                         </div>
 
@@ -228,13 +267,24 @@
                         <div>
                             <span class="text-xs text-slate-500 font-mono mb-2 block border-l-2 border-red-500/50 pl-2">DevOps & Build</span>
                             <div class="flex flex-wrap gap-2">
-                                <span class="bg-slate-800 border border-slate-700 hover:border-blue-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Docker</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-orange-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Git</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-gray-100 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">WSL</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-green-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">CMake</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-gray-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Make</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-red-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Clang</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">PowerShell</span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-docker-plain text-blue-500"></i> Docker
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-orange-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-git-plain text-orange-500"></i> Git
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-gray-100 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-linux-plain text-gray-100"></i> WSL
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-green-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-cmake-plain text-green-600"></i> CMake
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-powershell-plain text-blue-600"></i> PowerShell
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-600 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-bash-plain text-blue-600"></i> Bash
+                                </span>
                             </div>
                         </div>
 
@@ -242,10 +292,20 @@
                         <div>
                             <span class="text-xs text-slate-500 font-mono mb-2 block border-l-2 border-pink-500/50 pl-2">Creative & Docs</span>
                             <div class="flex flex-wrap gap-2">
-                                <span class="bg-slate-800 border border-slate-700 hover:border-blue-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Ps</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-orange-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Ai</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-purple-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">3D Modeling</span>
-                                <span class="bg-slate-800 border border-slate-700 hover:border-teal-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">Typst</span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-blue-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+                                    <i class="devicon-photoshop-plain text-blue-400"></i> Ps
+                                </span>
+                                <span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-orange-500 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+									<i class="fas fa-bezier-curve text-orange-500"></i> Ai
+								</span>
+
+								<span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-orange-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+									<i class="devicon-blender-original text-orange-400"></i> Blender
+								</span>
+
+								<span class="flex items-center gap-1.5 bg-slate-800 border border-slate-700 hover:border-teal-400 text-slate-300 px-3 py-1 rounded text-sm font-mono cursor-default transition-colors">
+									<i class="fas fa-file-lines text-teal-400"></i> Typst
+								</span>
                             </div>
                         </div>
 
@@ -315,12 +375,12 @@
                             <i class="fas fa-network-wired"></i>
                         </div>
                         <div class="flex gap-4">
-                            <a href="https://github.com/zuudevs/frqs-network.git" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                            <a href="https://github.com/zuudevs/etherz.git" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-term-green transition-colors">FRQS Network</h3>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-term-green transition-colors">Etherz</h3>
                     <p class="text-slate-400 mb-4 text-sm">
-                        High-performance C++ Networking Library. Modular, designed for efficiency, focusing on low-level socket handling and multithreading without heavy framework overhead.
+                        A lightweight, type-safe, and modern networking library built with C++23 features.
                     </p>
                     <ul class="flex flex-wrap gap-3 text-xs font-mono text-slate-300">
                         <li class="bg-slate-800 px-2 py-1 rounded">C++20</li>
@@ -357,12 +417,12 @@
                             <i class="fas fa-layer-group"></i>
                         </div>
                         <div class="flex gap-4">
-                            <a href="https://github.com/zuudevs/FRQS-Widget.git" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
+                            <a href="https://github.com/zuudevs/zuu_json.git" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-term-green transition-colors">FRQS Widget</h3>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-term-green transition-colors">zuu_json</h3>
                     <p class="text-slate-400 mb-4 text-sm">
-                        Experimental C++ UI Framework built from scratch. Designed to be lightweight, avoiding bloated libraries by implementing custom rendering and layout logic.
+                        A high-performance, header-friendly C++23 JSON library focused on predictable latency and zero-allocation hot paths.
                     </p>
                     <ul class="flex flex-wrap gap-3 text-xs font-mono text-slate-300">
                         <li class="bg-slate-800 px-2 py-1 rounded">C++</li>
@@ -381,7 +441,7 @@
                             <a href="https://github.com/zuudevs/buildscape.git" target="_blank" class="text-slate-400 hover:text-white"><i class="fab fa-github text-xl"></i></a>
                         </div>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-term-green transition-colors">Architecture Showcase</h3>
+                    <h3 class="text-xl font-bold text-white mb-2 group-hover:text-term-green transition-colors">Buildscape</h3>
                     <p class="text-slate-400 mb-4 text-sm">
                         Android mobile application (SDGs 9) for sustainable infrastructure. A Pinterest-like gallery app focused on architectural designs.
                     </p>
@@ -402,6 +462,69 @@
         </div>
     </section>
 
+    <!-- Certificates Section -->
+    <section id="certificates" class="py-20 bg-dark-bg">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-white mb-12 text-center"><span class="text-term-green font-mono">03.</span> Certificates & Achievements</h2>
+            
+            <!-- Adjust grid if you add more certificates -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                
+                <!-- Certificate 1 -->
+                <div class="bg-card-bg rounded-xl p-6 border border-slate-700 hover:border-term-green transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="text-term-green text-3xl mb-4">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-term-green transition-colors">Technology Incubation Sprint Program 2025</h3>
+                        <p class="text-slate-400 mb-4 text-sm font-mono">Issued by: Institut Teknologi PLN</p>
+                    </div>
+                    <div class="mt-auto border-t border-slate-700 pt-4 flex justify-between items-center text-xs text-slate-500 font-mono">
+                        <span><i class="far fa-calendar-alt"></i> 2026</span>
+                    </div>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="bg-card-bg rounded-xl p-6 border border-slate-700 hover:border-term-green transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="text-term-green text-3xl mb-4">
+                            <i class="fas fa-certificate"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-term-green transition-colors">Membangun Sistem Machine Learning</h3>
+                        <p class="text-slate-400 mb-4 text-sm font-mono">Issued by: Dicoding Indonesia</p>
+                    </div>
+                    <div class="mt-auto border-t border-slate-700 pt-4 flex justify-between items-center text-xs text-slate-500 font-mono">
+                        <span><i class="far fa-calendar-alt"></i> 2026</span>
+                    </div>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="bg-card-bg rounded-xl p-6 border border-slate-700 hover:border-term-green transition-all group flex flex-col justify-between">
+                    <div>
+                        <div class="text-term-green text-3xl mb-4">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2 group-hover:text-term-green transition-colors">Internship Program</h3>
+                        <p class="text-slate-400 mb-4 text-sm font-mono">Issued by: PLN Icon Plus</p>
+                    </div>
+                    <div class="mt-auto border-t border-slate-700 pt-4 flex justify-between items-center text-xs text-slate-500 font-mono">
+                        <span><i class="far fa-calendar-alt"></i> 2026</span>
+                    </div>
+                </div>
+
+            </div>
+            
+            <!-- Redirect Button -->
+            <div class="mt-12 flex justify-center">
+                <!-- Ganti link ini dengan link LinkedIn / Sertifikat asli kamu -->
+                <a href="https://www.linkedin.com/in/rafi-zuhayr/details/certifications/" target="_blank" class="px-8 py-3 border border-slate-600 text-base font-medium rounded-md text-slate-300 hover:bg-[#0A66C2] hover:border-[#0A66C2] hover:text-white transition-all duration-300 flex items-center gap-3 group shadow-lg">
+                    <i class="fab fa-linkedin text-xl group-hover:scale-110 transition-transform"></i> 
+                    View all certificates on LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer / Contact -->
     <footer id="contact" class="bg-dark-bg border-t border-slate-800 py-12">
         <div class="max-w-4xl mx-auto px-4 text-center">
@@ -413,7 +536,7 @@
             <div class="flex justify-center gap-6 mb-8">
                 <a href="https://github.com/zuudevs" class="text-slate-400 hover:text-white transition-colors text-2xl" aria-label="Github"><i class="fab fa-github"></i></a>
                 <a href="mailto:zuudevs@gmail.com" class="text-slate-400 hover:text-term-green transition-colors text-2xl" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                <a href="www.linkedin.com/in/rafi-zuhayr" class="text-slate-400 hover:text-blue-400 transition-colors text-2xl" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/rafi-zuhayr" class="text-slate-400 hover:text-blue-400 transition-colors text-2xl" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
 
             <p class="text-slate-600 text-sm font-mono">
